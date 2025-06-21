@@ -18,6 +18,10 @@ import subscriptionCtrl from "./controllers/subcriptioncltr.js"
 const app=express();
 const port=3077;
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.send("QuestBucks Backend is running 🚀");
+});
+
 app.use(cors());
 app.use('/uploads', express.static('uploads'));
 configureDb();

@@ -43,7 +43,7 @@ const quizSchema = new Schema({
   ],
   quiz_type: {
     type: String,
-    enum: ["multiple_choice", "true_false", "open_ended"],
+    enum: ["multiple_choice", "true_false"],
     default: "multiple_choice",
   },
   total_points: {

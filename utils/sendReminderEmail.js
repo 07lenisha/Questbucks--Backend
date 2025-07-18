@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer';
 const sendReminderEmail = async ({ toEmail, name, itemName, daysLeft, type }) => {
-    if (daysLeft > 3) return;
-  const transporter = nodemailer.createTransport({
+if (daysLeft > 3) return;
+const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: process.env.EMAIL_USER, 
